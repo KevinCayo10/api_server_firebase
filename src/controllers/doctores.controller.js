@@ -36,6 +36,7 @@ const obtenerDoctor = async (req, res) => {
 
 const guardarDoctor = async (req, res) => {
   const {
+    msp,
     nombres,
     apellidos,
     direccion,
@@ -52,6 +53,7 @@ const guardarDoctor = async (req, res) => {
   } = req.body;
 
   const doctor = {
+    msp,
     nombres,
     apellidos,
     direccion,
